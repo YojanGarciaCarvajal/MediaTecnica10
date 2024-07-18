@@ -1,0 +1,24 @@
+using System;
+class Program
+{
+    static void Main(){
+        Menu();
+        Console.WriteLine("Escriba una frese cualquiera...");
+        string frase = Console.ReadLine();
+        Console.WriteLine("su frase tiene" + frase.Length + " cantidad de letras.");
+        buscarPalabra("universo", frase);
+    }
+    static void Menu (){
+        Console.WriteLine("..........");
+        Console.WriteLine("...MENU...");
+        Console.WriteLine("..........");
+    }
+    static void buscarPalabra(string palabra, string frase){
+        if (frase.Contains( palabra ) ){
+            Console.WriteLine("No existe esa palabra buscada: " + palabra );
+        }
+        else{
+            Console.WriteLine("No existe esa palabra buscada: " + palabra );
+        }
+    }
+}
